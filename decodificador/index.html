@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- Linkando fontes -->
+    <!-- Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Decodificador</title>
   </head>
   <body>
@@ -18,6 +28,19 @@
               placeholder="Digite seu texto..."
               autofocus
             ></textarea>
+            <p>
+              <span>
+                <img
+                  src="src/images/alert_vector/16px.png"
+                  alt="alert"
+                  width="10px"
+                  height="10px"
+                />
+              </span>
+              <span style="font-size: 13px" class="info">
+                apenas letras minusculas e sem acento.</span
+              >
+            </p>
           </div>
           <div class="botoes">
             <button
@@ -38,7 +61,7 @@
         </div>
 
         <div class="conteudo-direita" align="center">
-          <div class="display-texto">
+          <div class="display-texto fade-in">
             <div class="resultado-texto">
               <img
                 src="src/images/waiting_for_text/336 x 304.png"
@@ -48,7 +71,8 @@
               />
               <h3>Nenhuma mensagem encontada</h3>
               <p>
-                Digite uma mensagem para ser criptografada, ela aparecerá aqui
+                Digite uma mensagem para ser criptografada ou descriptografada,
+                ela aparecerá aqui
               </p>
             </div>
           </div>

@@ -2,6 +2,11 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
+  font-family: Inter;
+}
+
+body {
+  background-color: bisque;
 }
 
 .container {
@@ -13,27 +18,78 @@
 
 .conteudo-esquerda {
   width: 80%;
+  padding-right: 5%;
 }
 .input-texto {
+  font-size: 25px;
+  padding: 10px;
   resize: none;
+  border: none;
+  width: 90%;
+  background-color: #ffffff00;
 }
 
 .botoes {
   display: flex;
   padding: 10px 0;
-  gap: 3%;
+  gap: 1%;
 }
 
-/* .conteudo-direita {
-  width: 40%;
-} */
+.btn {
+  padding: 8px 12px;
+  border-style: hidden;
+  border-radius: 5px;
+  background-color: burlywood;
+}
+
+.botao-descriptografar {
+  background-color: rgb(83, 83, 250);
+}
 
 .display-texto {
   border-radius: 25px;
-  background-color: aqua;
-  padding: 100px 10px;
+  background-color: white;
+  padding: 100px 25px;
+  max-width: 800px;
+}
+
+.btn-acao-texto {
+  margin-top: 20px;
+}
+
+.mensagem {
+  padding: 25px;
 }
 
 footer {
   height: 10vh;
+}
+
+/* EXPERIMENTAL */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.75s ease-in forwards;
+}
+
+@keyframes pulseRed {
+  0%,
+  100% {
+    color: black; /* Cor original ou qualquer outra cor que você prefira */
+  }
+  50% {
+    color: red;
+  }
+}
+
+.alert {
+  animation: pulseRed 1s;
 }
