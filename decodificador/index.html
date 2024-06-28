@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Decodificador</title>
+  </head>
+  <body>
+    <main class="conteudo-principal">
+      <div class="container">
+        <div class="conteudo-esquerda">
+          <div class="area-texto">
+            <textarea
+              class="input-texto"
+              cols="30"
+              rows="10"
+              placeholder="Digite seu texto..."
+            ></textarea>
+          </div>
+          <div class="botoes">
+            <button
+              type="button"
+              class="btn botao-criptografar"
+              onclick="criptografar()"
+            >
+              Criptografar
+            </button>
+            <button
+              type="button"
+              class="btn botao-descriptografar"
+              onclick="descriptografar()"
+            >
+              Descriptografar
+            </button>
+          </div>
+        </div>
+
+        <div class="conteudo-direita" align="center">
+          <div class="display-texto">
+            <div class="resultado-texto">
+              <img
+                src="src/images/waiting_for_text/336 x 304.png"
+                width="220px"
+                height="200px"
+                alt=""
+              />
+              <h3>Nenhuma mensagem encontada</h3>
+              <p>Digite uma mensagem para ser criptografada</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
