@@ -91,5 +91,5 @@ footer {
 }
 
 .alert {
-  animation: pulseRed 1s;
+  animation: pulseRed 1.5s infinite;
 }
