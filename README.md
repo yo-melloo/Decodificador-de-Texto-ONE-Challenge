@@ -10,7 +10,7 @@ O Desafio do Codificador consiste em programar uma página web que criptografe e
 
 ## Tecnologias utilizadas
 
-- **Figma**: Protótipo base fornecido pela ONE, foi usado algumas imagens e paleta de cores disponibilizadas no protótipo.
+- **Figma**: Protótipo base fornecido pela ONE, foi usado algumas imagens e paleta de cores disponibilizadas.
 - **HTML + CSS**: Na construção da estrutura e estilização da página, o básico de toda web.
 - **JavaScript**: Na lógica e interação da página.
 
