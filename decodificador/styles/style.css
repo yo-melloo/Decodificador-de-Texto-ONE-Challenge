@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --cor-principal: #d6efd8;
+  --cor-secundaria: #80af81;
+  --cor-terciaria: #508d4e;
+  --cor-destaque: #1a5319;
+  /* --cor-especial: bisque; */
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +16,7 @@
 }
 
 body {
-  background-color: bisque;
+  background-color: var(--cor-principal);
 }
 
 .container {
@@ -39,16 +49,17 @@ body {
   padding: 8px 12px;
   border-style: hidden;
   border-radius: 5px;
-  background-color: burlywood;
+  background-color: var(--cor-secundaria);
+  font-weight: 450;
 }
 
 .botao-descriptografar {
-  background-color: rgb(83, 83, 250);
+  background-color: var(--cor-destaque);
 }
 
 .display-texto {
   border-radius: 25px;
-  background-color: white;
+  background-color: var(--cor-secundaria);
   padding: 100px 25px;
   max-width: 800px;
 }
