@@ -8,65 +8,60 @@
     <title>Decodificador</title>
   </head>
   <body>
-    <main class="conteudo-principal">
-      <div class="container">
-        <div class="conteudo-esquerda">
-          <div class="area-texto">
-            <textarea
-              class="input-texto"
-              cols="30"
-              rows="10"
-              placeholder="Digite seu texto..."
-              autofocus
-            ></textarea>
-            <p>
-              <span>
-                <img
-                  src="src/images/alert_vector/16px.png"
-                  alt="alert"
-                  width="10px"
-                  height="10px"
-                />
-              </span>
-              <span style="font-size: 13px" class="info">
-                apenas letras minusculas e sem acento.</span
-              >
-            </p>
-          </div>
-          <div class="botoes">
-            <button
-              type="button"
-              class="btn botao-criptografar"
-              onclick="criptografar()"
-            >
-              Criptografar
-            </button>
-            <button
-              type="button"
-              class="btn botao-descriptografar"
-              onclick="descriptografar()"
-            >
-              Descriptografar
-            </button>
-          </div>
+    <main class="container-principal">
+      <!-- <div class="container"> -->
+      <section class="conteudo-esquerda">
+        <textarea
+          class="input-texto"
+          cols="30"
+          rows="10"
+          placeholder="Digite seu texto..."
+          autofocus
+        ></textarea>
+        <p>
+          <span>
+            <img
+              src="src/images/alert_vector/16px.png"
+              alt="alert"
+              width="10px"
+              height="10px"
+            />
+          </span>
+          <span style="font-size: 13px" class="info">
+            apenas letras minusculas e sem acento.</span
+          >
+        </p>
+        <div class="container-botoes">
+          <button
+            type="button"
+            class="btn botao-criptografar"
+            onclick="criptografar()"
+          >
+            Criptografar
+          </button>
+          <button
+            type="button"
+            class="btn botao-descriptografar"
+            onclick="descriptografar()"
+          >
+            Descriptografar
+          </button>
         </div>
+      </section>
 
-        <div class="conteudo-direita" align="center">
-          <div class="display-texto fade-in">
-            <div class="resultado-texto">
-              <img
-                src="src/images/waiting_for_text/336 x 304.png"
-                width="220px"
-                height="200px"
-                alt=""
-              />
-              <h3>Nenhuma mensagem encontada</h3>
-              <p>
-                Digite uma mensagem para ser criptografada ou descriptografada,
-                ela aparecerá aqui
-              </p>
-            </div>
-          </div>
+      <div class="display-texto fade-in">
+        <div class="resultado-texto">
+          <img
+            src="src/images/waiting_for_text/336 x 304.png"
+            width="220px"
+            height="200px"
+            alt="Mensagem Inválida"
+          />
+          <h3>Nenhuma mensagem encontada</h3>
+          <p>
+            Digite uma mensagem para ser criptografada ou descriptografada, ela
+            aparecerá aqui
+          </p>
         </div>
       </div>
     </main>

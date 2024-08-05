@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 :root {
-  --cor-principal: #d6efd8;
-  --cor-secundaria: #80af81;
-  --cor-terciaria: #508d4e;
-  --cor-destaque: #1a5319;
+  --cor-principal: #ebf4f6;
+  --cor-secundaria: #37b7c3;
+  --cor-terciaria: #088395;
+  --cor-destaque: #071952;
+  --cor-fonte: black;
+  --cor-transparencia: rgba(0, 0, 0, 0.02);
   /* --cor-especial: bisque; */
 }
 
@@ -17,55 +19,85 @@
 
 body {
   background-color: var(--cor-principal);
+
+  height: 95vh;
 }
 
-.container {
-  padding: 0 5rem;
+::selection {
+  background-color: var(--cor-destaque);
+  color: var(--cor-principal);
+}
+
+.container-principal {
   display: flex;
-  height: 90vh;
   align-items: center;
+  box-sizing: content-box;
+  justify-content: space-around;
+  height: 90%;
 }
 
 .conteudo-esquerda {
-  width: 80%;
-  padding-right: 5%;
+  width: 40%;
 }
+
 .input-texto {
   font-size: 25px;
   padding: 10px;
   resize: none;
   border: none;
+  border-radius: 16px;
+  outline: none;
   width: 90%;
   background-color: #ffffff00;
 }
 
-.botoes {
+.input-texto:hover {
+  animation: pulseTransparent 1s infinite;
+}
+
+.container-botoes {
   display: flex;
   padding: 10px 0;
-  gap: 1%;
+  gap: 3%;
 }
 
 .btn {
-  padding: 8px 12px;
+  width: 115px;
+  height: 45px;
   border-style: hidden;
-  border-radius: 5px;
+  border-radius: 16px;
   background-color: var(--cor-secundaria);
   font-weight: 450;
 }
 
 .botao-descriptografar {
   background-color: var(--cor-destaque);
+  color: var(--cor-principal);
 }
 
 .display-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border-radius: 25px;
   background-color: var(--cor-secundaria);
   padding: 100px 25px;
-  max-width: 800px;
+  width: 40%;
+  height: 90;
+  box-sizing: border-box;
+}
+
+.resultado-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .mensagem {
   padding: 25px;
+  word-break: break-all;
+  text-align: center;
 }
 
 footer {
@@ -94,6 +126,16 @@ footer {
   }
   50% {
     color: red;
+  }
+}
+
+@keyframes pulseTransparent {
+  0%,
+  100% {
+    color: black; /* Cor original ou qualquer outra cor que você prefira */
+  }
+  50% {
+    background-color: var(--cor-transparencia);
   }
 }
 
