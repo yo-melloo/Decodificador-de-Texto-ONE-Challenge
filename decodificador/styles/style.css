@@ -19,7 +19,7 @@
 
 body {
   background-color: var(--cor-principal);
-
+  padding: 5%;
   height: 95vh;
 }
 
@@ -33,7 +33,6 @@ body {
   align-items: center;
   box-sizing: content-box;
   justify-content: space-around;
-  height: 90%;
 }
 
 .conteudo-esquerda {
@@ -41,7 +40,7 @@ body {
 }
 
 .input-texto {
-  font-size: 25px;
+  font-size: 1.5rem;
   padding: 10px;
   resize: none;
   border: none;
@@ -68,10 +67,15 @@ body {
   border-radius: 16px;
   background-color: var(--cor-secundaria);
   font-weight: 450;
+  cursor: pointer;
 }
 
 .botao-descriptografar {
   background-color: var(--cor-destaque);
+  color: var(--cor-principal);
+}
+
+.botao-copiar:hover {
   color: var(--cor-principal);
 }
 
@@ -82,8 +86,8 @@ body {
   border-radius: 25px;
   background-color: var(--cor-secundaria);
   padding: 100px 25px;
-  width: 40%;
-  height: 90;
+  width: 32%;
+  height: 90%;
   box-sizing: border-box;
 }
 
@@ -92,6 +96,11 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.imagem-conteudo {
+  height: 80%;
+  width: 80%;
 }
 
 .mensagem {
