@@ -17,10 +17,18 @@
   font-family: Inter;
 }
 
+header {
+  display: flex;
+  padding: 0% 2%;
+}
+
+.logo-alura {
+  padding: 2% 0%;
+}
+
 body {
   background-color: var(--cor-principal);
-  padding: 5%;
-  height: 95vh;
+  /* height: 100vh; */
 }
 
 ::selection {
@@ -29,15 +37,16 @@ body {
 }
 
 .container-principal {
+  padding: 3% 3%;
   display: flex;
   align-items: center;
   box-sizing: content-box;
   justify-content: space-around;
 }
 
-.conteudo-esquerda {
+/* .conteudo-esquerda {
   width: 40%;
-}
+} */
 
 .input-texto {
   font-size: 1.5rem;
@@ -51,7 +60,7 @@ body {
 }
 
 .input-texto:hover {
-  animation: pulseTransparent 1s infinite;
+  background-color: var(--cor-transparencia);
 }
 
 .container-botoes {
@@ -96,11 +105,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.imagem-conteudo {
-  height: 80%;
-  width: 80%;
+  gap: 5px;
 }
 
 .mensagem {
@@ -110,7 +115,18 @@ body {
 }
 
 footer {
-  height: 10vh;
+  background-color: var(--cor-secundaria);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 5%; */
+  padding: 22.5px;
+}
+
+.desenvolvido-por {
+  color: var(--cor-principal);
+  text-align: center;
+  font-weight: 200;
 }
 
 /* EXPERIMENTAL */
@@ -138,16 +154,22 @@ footer {
   }
 }
 
-@keyframes pulseTransparent {
-  0%,
-  100% {
-    color: black; /* Cor original ou qualquer outra cor que você prefira */
-  }
-  50% {
-    background-color: var(--cor-transparencia);
-  }
-}
-
 .alert {
   animation: pulseRed 1.5s infinite;
+}
+
+@media (max-width: 780px) {
+  .container-principal {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .display-texto {
+    width: 90%;
+    height: 90%;
+  }
+
+  .imagem-conteudo {
+    display: none;
+  }
 }

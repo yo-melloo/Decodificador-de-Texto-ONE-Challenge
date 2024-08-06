@@ -93,8 +93,10 @@ function copiar(texto) {
   navigator.clipboard
     .writeText(mensagemParaCopia)
     .then(() => {
-      console.log(mensagemParaCopia);
-      console.log("Texto copiado para a área de transferência!");
+      // console.log(mensagemParaCopia);
+      // console.log("Texto copiado para a área de transferência!");
+      let stringAlerta = `O texto "${mensagemParaCopia}" foi copiado com sucesso.`;
+      alert(stringAlerta);
     })
     .catch((error) => {
       console.error(
