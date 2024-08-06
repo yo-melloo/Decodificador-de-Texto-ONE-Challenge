@@ -84,6 +84,10 @@ body {
   color: var(--cor-principal);
 }
 
+.botao-copiar {
+  border: solid var(--cor-principal) 1px;
+}
+
 .botao-copiar:hover {
   color: var(--cor-principal);
 }
@@ -113,6 +117,10 @@ body {
   word-break: break-all;
   text-align: center;
 }
+/* 
+.mensagem:hover {
+  color: var(--cor-principal);
+} */
 
 footer {
   background-color: var(--cor-secundaria);

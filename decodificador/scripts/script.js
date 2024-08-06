@@ -11,6 +11,7 @@ let htmlNaoValido = `<img
                 width="220px"
                 height="200px"
                 alt=""
+                class="imagem-conteudo"
               />
               <h3>Mensagem inválida</h3>
               <p>O conteúdo da mensagem não pode ser vazio ou conter acentos, números, e letras maiúsculas.</p>`;
