@@ -40,4 +40,4 @@ Erro na criptografia, o aviso começa piscar (fade-in, fade-out em 1 segundo rep
 
 - **[06/08/2024]**: Tive problemas com o trabalho, não imaginei que mesmo assim, seria tão fácil ou que eu estava perto de terminar de "adiquirir conhecimento" suficiente para fazer o projeto da maneira que imaginei. Estou feliz e muito satisfeito. 🔻
 
-- # ![Acessar](https://yo-melloo.github.io/Decodificador-de-Texto-ONE-Challenge/)
+- # [Acessar](https://yo-melloo.github.io/Decodificador-de-Texto-ONE-Challenge/)
