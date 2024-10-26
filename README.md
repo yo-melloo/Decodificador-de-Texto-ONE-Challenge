@@ -41,3 +41,8 @@ Erro na criptografia, o aviso começa piscar (fade-in, fade-out em 1 segundo rep
 - **[06/08/2024]**: Tive problemas com o trabalho, não imaginei que mesmo assim, seria tão fácil ou que eu estava perto de terminar de "adiquirir conhecimento" suficiente para fazer o projeto da maneira que imaginei. Estou feliz e muito satisfeito. 🔻
 
 
+***
+
+![Insignia do desafio](https://github.com/user-attachments/assets/ca2dc6c8-10d3-443d-a3ab-7ac566efe553)
+
+
